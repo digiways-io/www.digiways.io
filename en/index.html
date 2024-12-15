@@ -1464,6 +1464,47 @@
           transform: translateY(0);
         }
       }
+
+      /* Video section specific styles */
+      #video-section .heading {
+        font-size: 3.1em;
+        line-height: 1.1;
+        margin-bottom: 0.2em;
+        margin-top: 0.5em;
+      }
+
+      #video-section .title-box__text {
+        font-size: 1.2em;
+        line-height: 1.4;
+        max-width: 600px;
+      }
+
+      #video-section .video-container {
+        transition: transform 0.3s ease;
+      }
+
+      #video-section .video-container:hover {
+        transform: translateY(-5px);
+      }
+
+      @media (max-width: 768px) {
+        #video-section .heading {
+          font-size: 2.4em;
+          line-height: 1.2;
+          margin-bottom: 0.3em;
+        }
+
+        #video-section .title-box__text {
+          font-size: 1.1em;
+          line-height: 1.4;
+        }
+      }
+
+      @media (max-width: 500px) {
+        #video-section .heading {
+          font-size: 2em;
+        }
+      }
     </style>
   </body>
 </html>
