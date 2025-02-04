@@ -1,7 +1,7 @@
 {
     "page": {
-        "title": "DigiWays - Digital Solutions for Business",
-        "description": "DigiWays specializes in delivering innovative SaaS solutions designed to digitize and optimize operations in commercial, hospitality, and gastronomic industries.",
+        "title": "Digiways - Digital Solutions for Business",
+        "description": "Digiways specializes in delivering innovative SaaS solutions designed to digitize and optimize operations in commercial, hospitality, and gastronomic industries.",
         "keywords": "digital solutions, SaaS, hospitality software, restaurant management, mall management"
     },
     "nav": {
@@ -16,7 +16,7 @@
         "badge": "Working for your success",
         "title": "Shape the Future",
         "subtitle": "with DigiWays",
-        "description": "At DigiWays, we specialize in delivering innovative SaaS solutions designed to digitize and optimize operations in the commercial, hospitality, and gastronomic industries. Our cutting-edge technology empowers businesses to thrive in a digitally connected world.",
+        "description": "At Digiways, we specialize in delivering innovative SaaS solutions designed to digitize and optimize operations in the commercial, hospitality, and gastronomic industries. Our cutting-edge technology empowers businesses to thrive in a digitally connected world.",
         "cta": {
             "contact": "Contact",
             "playVideo": "Play Video"
@@ -46,7 +46,7 @@
     "about": {
         "meta": "MORE ABOUT US",
         "title": "Transforming Business Through Digital Innovation",
-        "description": "At DigiWays, we're dedicated to revolutionizing the hospitality and commercial sectors through innovative SaaS solutions. Our technology empowers businesses to embrace digital transformation and achieve operational excellence.",
+        "description": "At Digiways, we're dedicated to revolutionizing the hospitality and commercial sectors through innovative SaaS solutions. Our technology empowers businesses to embrace digital transformation and achieve operational excellence.",
         "features": {
             "feature1": "Customized SaaS Platforms",
             "feature2": "24/7 Technical Support",
@@ -206,7 +206,7 @@
         },
         "copyright": {
             "prefix": "©",
-            "company": "DigiWays",
+            "company": "Digiways",
             "rights": "All Rights Reserved"
         }
     }

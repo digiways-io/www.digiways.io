@@ -1,7 +1,7 @@
 {
     "page": {
-        "title": "DigiWays - Solutions numériques pour les entreprises",
-        "description": "DigiWays se spécialise dans la fourniture de solutions SaaS innovantes conçues pour numériser et optimiser les opérations dans les secteurs commerciaux, hôteliers et gastronomiques.",
+        "title": "Digiways - Solutions numériques pour les entreprises",
+        "description": "Digiways se spécialise dans la fourniture de solutions SaaS innovantes conçues pour numériser et optimiser les opérations dans les secteurs commerciaux, hôteliers et gastronomiques.",
         "keywords": "solutions numériques, SaaS, logiciels hôteliers, gestion de restaurants, gestion de centres commerciaux"
     },
     "nav": {
@@ -15,8 +15,8 @@
     "hero": {
         "badge": "Travailler pour votre succès",
         "title": "Façonner l'Avenir",
-        "subtitle": "avec DigiWays",
-        "description": "Chez DigiWays, nous nous spécialisons dans la fourniture de solutions SaaS innovantes conçues pour numériser et optimiser les opérations dans les secteurs commerciaux, hôteliers et gastronomiques. Notre technologie de pointe permet aux entreprises de prospérer dans un monde numériquement connecté.",
+        "subtitle": "avec Digiways",
+        "description": "Chez Digiways, nous nous spécialisons dans la fourniture de solutions SaaS innovantes conçues pour numériser et optimiser les opérations dans les secteurs commerciaux, hôteliers et gastronomiques. Notre technologie de pointe permet aux entreprises de prospérer dans un monde numériquement connecté.",
         "cta": {
             "contact": "Contact",
             "playVideo": "Lire la vidéo"
@@ -46,7 +46,7 @@
     "about": {
         "meta": "EN SAVOIR PLUS SUR NOUS",
         "title": "Transformer les entreprises grâce à l'innovation numérique",
-        "description": "Chez DigiWays, nous sommes dédiés à révolutionner les secteurs de l'hôtellerie et du commerce grâce à des solutions SaaS innovantes. Notre technologie permet aux entreprises d'adopter la transformation numérique et d'atteindre l'excellence opérationnelle.",
+        "description": "Chez Digiways, nous sommes dédiés à révolutionner les secteurs de l'hôtellerie et du commerce grâce à des solutions SaaS innovantes. Notre technologie permet aux entreprises d'adopter la transformation numérique et d'atteindre l'excellence opérationnelle.",
         "features": {
             "feature1": "Plates-formes SaaS personnalisées",
             "feature2": "Support technique 24/7",
@@ -206,7 +206,7 @@
         },
         "copyright": {
             "prefix": "©",
-            "company": "DigiWays",
+            "company": "Digiways",
             "rights": "Tous Droits Réservés"
         }
     }
