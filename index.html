@@ -1,26 +1,1296 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Language Redirect</title>
-    <script>
-      // Function to detect browser language
-      function getBrowserLanguage() {
-        return (navigator.language || navigator.userLanguage).substring(0, 2);
-      }
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8" />
+      <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+      <title data-i18n="page.title">
+        DigiWays - Digital Solutions for Business
+      </title>
+      <meta
+        name="description"
+        data-i18n="page.description"
+        content="DigiWays specializes in delivering innovative SaaS solutions"
+      />
+      <meta
+        name="keywords"
+        data-i18n="page.keywords"
+        content="digital solutions, SaaS, hospitality software"
+      />
 
-      // Redirect based on browser language
-      window.onload = function () {
-        var lang = getBrowserLanguage();
-        if (lang === "fr") {
-          window.location.href = "/fr/";
-        } else {
-          window.location.href = "/en/";
+      <!-- Favicons -->
+      <!-- <link href="assets/img/favicon.png" rel="icon" />
+      <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" /> -->
+
+      <link
+        rel="icon"
+        type="image/png"
+        href="assets/img/favicon-96x96.png"
+        sizes="96x96"
+      />
+      <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+      <link rel="shortcut icon" href="assets/img/favicon.ico" />
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="assets/img/apple-touch-icon.png"
+      />
+      <meta name="apple-mobile-web-app-title" content="DigiWays" />
+      <link rel="manifest" href="assets/img/site.webmanifest" />
+
+      <!-- Fonts -->
+      <link href="https://fonts.googleapis.com" rel="preconnect" />
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"
+      />
+
+      <!-- Vendor CSS Files -->
+      <link
+        href="assets/vendor/bootstrap/css/bootstrap.min.css"
+        rel="stylesheet"
+      />
+      <link
+        href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+        rel="stylesheet"
+      />
+      <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+      <link
+        href="assets/vendor/glightbox/css/glightbox.min.css"
+        rel="stylesheet"
+      />
+      <link
+        href="assets/vendor/swiper/swiper-bundle.min.css"
+        rel="stylesheet"
+      />
+
+      <!-- Main CSS File -->
+      <link href="assets/css/main.css" rel="stylesheet" />
+
+      <!-- i18next Libraries -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/22.5.0/i18next.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/2.0.0/jquery-i18next.min.js"></script>
+      <script src="assets/js/i18n-config.js"></script>
+    </head>
+
+    <body class="index-page">
+      <header id="header" class="header d-flex align-items-center fixed-top">
+        <div
+          class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+        >
+          <a
+            href="index.html"
+            class="logo d-flex align-items-center me-auto me-xl-0"
+          >
+            <img src="assets/img/logo.png" alt="" />
+          </a>
+
+          <nav id="navmenu" class="navmenu">
+            <ul>
+              <li>
+                <a href="#hero" class="active" data-i18n="nav.home">Home</a>
+              </li>
+              <li><a href="#about" data-i18n="nav.about">About</a></li>
+              <li>
+                <a href="#features" data-i18n="nav.solutions">Solutions</a>
+              </li>
+              <li><a href="#services" data-i18n="nav.services">Services</a></li>
+              <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+              <!-- Language Dropdown -->
+              <li class="dropdown language-dropdown">
+                <a href="#" style="display: flex; align-items: center">
+                  <img
+                    id="selected-lang-flag"
+                    src="assets/img/flags/en.svg"
+                    alt=""
+                    style="
+                      width: 24px;
+                      height: 18px;
+                      margin-right: 8px;
+                      flex-shrink: 0;
+                    "
+                  />
+                  <span id="selected-lang-text" style="flex: 1; padding: 0 4px"
+                    >English</span
+                  >
+                  <i class="bi bi-chevron-down toggle-dropdown"></i>
+                </a>
+                <ul>
+                  <li>
+                    <a
+                      href="#"
+                      onclick="changeLanguage('en')"
+                      style="display: flex; align-items: center"
+                    >
+                      <img
+                        src="assets/img/flags/en.svg"
+                        alt=""
+                        style="
+                          width: 24px;
+                          height: 18px;
+                          margin-right: 8px;
+                          flex-shrink: 0;
+                        "
+                      />
+                      <span style="flex: 1; padding: 0 4px">English</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      onclick="changeLanguage('fr')"
+                      style="display: flex; align-items: center"
+                    >
+                      <img
+                        src="assets/img/flags/fr.svg"
+                        alt=""
+                        style="
+                          width: 24px;
+                          height: 18px;
+                          margin-right: 8px;
+                          flex-shrink: 0;
+                        "
+                      />
+                      <span style="flex: 1; padding: 0 4px">Français</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      onclick="changeLanguage('ar')"
+                      style="display: flex; align-items: center"
+                    >
+                      <img
+                        src="assets/img/flags/ar.svg"
+                        alt=""
+                        style="
+                          width: 24px;
+                          height: 18px;
+                          margin-right: 8px;
+                          flex-shrink: 0;
+                        "
+                      />
+                      <span style="flex: 1; padding: 0 4px">العربية</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- <li class="dropdown">
+                <a href="#"
+                  ><span>Dropdown</span>
+                  <i class="bi bi-chevron-down toggle-dropdown"></i
+                ></a>
+                <ul>
+                  <li><a href="#">Dropdown 1</a></li>
+                  <li class="dropdown">
+                    <a href="#"
+                      ><span>Deep Dropdown</span>
+                      <i class="bi bi-chevron-down toggle-dropdown"></i
+                    ></a>
+                    <ul>
+                      <li><a href="#">Deep Dropdown 1</a></li>
+                      <li><a href="#">Deep Dropdown 2</a></li>
+                      <li><a href="#">Deep Dropdown 3</a></li>
+                      <li><a href="#">Deep Dropdown 4</a></li>
+                      <li><a href="#">Deep Dropdown 5</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Dropdown 2</a></li>
+                  <li><a href="#">Dropdown 3</a></li>
+                  <li><a href="#">Dropdown 4</a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown language-switcher">
+                <a href="#">
+                  <img
+                    id="selected-lang-flag"
+                    src="assets/img/flags/en.svg"
+                    alt="Selected Language"
+                    class="lang-flag"
+                  />
+                  <span id="selected-lang-text">English</span>
+                  <i class="bi bi-chevron-down toggle-dropdown"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#" onclick="changeLanguage('en')">
+                      <img
+                        src="assets/img/flags/en.svg"
+                        alt="English"
+                        class="lang-flag"
+                      />
+                      <span>English</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" onclick="changeLanguage('fr')">
+                      <img
+                        src="assets/img/flags/fr.svg"
+                        alt="Français"
+                        class="lang-flag"
+                      />
+                      <span>Français</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" onclick="changeLanguage('ar')">
+                      <img
+                        src="assets/img/flags/ar.svg"
+                        alt="العربية"
+                        class="lang-flag"
+                      />
+                      <span>العربية</span>
+                    </a>
+                  </li>
+                </ul>
+              </li> -->
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          </nav>
+
+          <a class="btn-getstarted" href="#about" data-i18n="nav.getStarted"
+            >Get Started</a
+          >
+        </div>
+      </header>
+
+      <main class="main">
+        <!-- Hero Section -->
+        <section id="hero" class="hero section">
+          <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <div
+                  class="hero-content"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  <div class="company-badge mb-4">
+                    <i class="bi bi-gear-fill me-2"></i>
+                    <span data-i18n="hero.badge">Working for your success</span>
+                  </div>
+
+                  <h1 class="mb-4">
+                    <span data-i18n="hero.title">Shape the Future</span><br />
+                    <span data-i18n="hero.subtitle"
+                      >with <span class="accent-text">DigiWays</span></span
+                    >
+                  </h1>
+
+                  <p class="mb-4 mb-md-5" data-i18n="hero.description">
+                    At DigiWays, we specialize in delivering innovative SaaS
+                    solutions designed to digitize and optimize operations in
+                    the commercial, hospitality, and gastronomic industries. Our
+                    cutting-edge technology empowers businesses to thrive in a
+                    digitally connected world.
+                  </p>
+
+                  <div class="hero-buttons">
+                    <a
+                      href="#contact"
+                      class="btn btn-primary me-0 me-sm-2 mx-1"
+                      data-i18n="hero.cta.contact"
+                      >Contact</a
+                    >
+                    <a href="#" class="btn btn-link mt-2 mt-sm-0 glightbox">
+                      <i class="bi bi-play-circle me-1"></i>
+                      <span data-i18n="hero.cta.playVideo">Play Video</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div
+                  class="hero-image"
+                  data-aos="zoom-out"
+                  data-aos-delay="300"
+                >
+                  <img
+                    src="assets/img/illustration-1.webp"
+                    alt="Hero Image"
+                    class="img-fluid"
+                  />
+                  <!-- <div class="customers-badge">
+                    <div class="customer-avatars">
+                      <img
+                        src="assets/img/avatar-1.webp"
+                        alt="Customer 1"
+                        class="avatar"
+                      />
+                      <img
+                        src="assets/img/avatar-2.webp"
+                        alt="Customer 2"
+                        class="avatar"
+                      />
+                      <img
+                        src="assets/img/avatar-3.webp"
+                        alt="Customer 3"
+                        class="avatar"
+                      />
+                      <img
+                        src="assets/img/avatar-4.webp"
+                        alt="Customer 4"
+                        class="avatar"
+                      />
+                      <img
+                        src="assets/img/avatar-5.webp"
+                        alt="Customer 5"
+                        class="avatar"
+                      />
+                      <span class="avatar more">12+</span>
+                    </div>
+                    <p class="mb-0 mt-2" data-i18n="hero.customers.text">
+                      12,000+ satisfied customers worldwide
+                    </p>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="row stats-row gy-4 mt-5"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <div class="col-lg-3 col-md-6">
+                <div class="stat-item">
+                  <div class="stat-icon">
+                    <i class="bi bi-gem"></i>
+                  </div>
+                  <div class="stat-content">
+                    <h4 data-i18n="stats.stat1.title">Market Leader</h4>
+                    <p class="mb-0" data-i18n="stats.stat1.description">
+                      In Digital Solutions
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6">
+                <div class="stat-item">
+                  <div class="stat-icon">
+                    <i class="bi bi-stack"></i>
+                  </div>
+                  <div class="stat-content">
+                    <h4 data-i18n="stats.stat2.title">4 Platforms</h4>
+                    <p class="mb-0" data-i18n="stats.stat2.description">
+                      Flagship Products
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6">
+                <div class="stat-item">
+                  <div class="stat-icon">
+                    <i class="bi bi-reception-4"></i>
+                  </div>
+                  <div class="stat-content">
+                    <h4 data-i18n="stats.stat3.title">Growing Fast</h4>
+                    <p class="mb-0" data-i18n="stats.stat3.description">
+                      Year Over Year
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6">
+                <div class="stat-item">
+                  <div class="stat-icon">
+                    <i class="bi bi-building-check"></i>
+                  </div>
+                  <div class="stat-content">
+                    <h4 data-i18n="stats.stat4.title">All-in-One</h4>
+                    <p class="mb-0" data-i18n="stats.stat4.description">
+                      Business Solutions
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+          <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="row gy-4 align-items-center justify-content-between">
+              <div class="col-xl-5" data-aos="fade-up" data-aos-delay="200">
+                <span class="about-meta" data-i18n="about.meta"
+                  >MORE ABOUT US</span
+                >
+                <h2 class="about-title" data-i18n="about.title">
+                  Transforming Business Through Digital Innovation
+                </h2>
+                <p class="about-description" data-i18n="about.description">
+                  At DigiWays, we're dedicated to revolutionizing the
+                  hospitality and commercial sectors through innovative SaaS
+                  solutions.
+                </p>
+
+                <div class="row feature-list-wrapper">
+                  <div class="col-md-6">
+                    <ul class="feature-list">
+                      <li>
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span data-i18n="about.features.feature1"
+                          >Customized SaaS Platforms</span
+                        >
+                      </li>
+                      <li>
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span data-i18n="about.features.feature2"
+                          >24/7 Technical Support</span
+                        >
+                      </li>
+                      <li>
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span data-i18n="about.features.feature3"
+                          >Advanced Analytics Tools</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <ul class="feature-list">
+                      <li>
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span data-i18n="about.features.feature4"
+                          >Seamless Integration</span
+                        >
+                      </li>
+                      <li>
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span data-i18n="about.features.feature5"
+                          >Scalable Solutions</span
+                        >
+                      </li>
+                      <li>
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span data-i18n="about.features.feature6"
+                          >Data-Driven Insights</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="info-wrapper">
+                  <div class="row gy-4">
+                    <div class="col-lg-5">
+                      <div class="profile d-flex align-items-center gap-3">
+                        <img
+                          src="assets/img/avatar-1.jpg"
+                          alt="Company Profile"
+                          class="profile-image"
+                        />
+                        <div>
+                          <h4
+                            class="profile-name"
+                            data-i18n="about.company.name"
+                          >
+                            DIGI WAYS INNOVATION
+                          </h4>
+                          <p
+                            class="profile-position"
+                            data-i18n="about.company.position"
+                          >
+                            Head Office
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-7">
+                      <div class="contact-info d-flex align-items-center gap-2">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <div>
+                          <p
+                            class="contact-label"
+                            data-i18n="about.company.location.label"
+                          >
+                            Find us at
+                          </p>
+                          <p
+                            class="contact-number"
+                            data-i18n="about.company.location.address"
+                          >
+                            BOIS DES CARS 01 N° 63, Dely Brahim, ALGER
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="image-wrapper">
+                  <div
+                    class="images position-relative"
+                    data-aos="zoom-out"
+                    data-aos-delay="400"
+                  >
+                    <img
+                      src="assets/img/about-5.webp"
+                      alt="Digital Solutions"
+                      class="img-fluid main-image rounded-4"
+                    />
+                    <img
+                      src="assets/img/about-2.webp"
+                      alt="Innovation Technology"
+                      class="img-fluid small-image rounded-4"
+                    />
+                  </div>
+                  <div class="experience-badge floating">
+                    <h3>4 <span>Products</span></h3>
+                    <p data-i18n="about.experience.text">
+                      Transforming industries digitally
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features section">
+          <div class="container section-title" data-aos="fade-up">
+            <h2 data-i18n="solutions.title">Solutions</h2>
+            <p data-i18n="solutions.description">
+              Transforming businesses through innovative digital solutions
+              tailored for restaurants, hotels, and shopping centers
+            </p>
+          </div>
+
+          <div class="container">
+            <div class="d-flex justify-content-center">
+              <ul class="nav nav-tabs" data-aos="fade-up" data-aos-delay="100">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active show"
+                    data-bs-toggle="tab"
+                    data-bs-target="#features-tab-1"
+                  >
+                    <h4 data-i18n="solutions.tabs.restaurants">Restaurants</h4>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    data-bs-toggle="tab"
+                    data-bs-target="#features-tab-2"
+                  >
+                    <h4 data-i18n="solutions.tabs.hotels">Hotels</h4>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    data-bs-toggle="tab"
+                    data-bs-target="#features-tab-3"
+                  >
+                    <h4 data-i18n="solutions.tabs.mall">Mall</h4>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+              <!-- OmniMenu Tab -->
+              <div class="tab-pane fade active show" id="features-tab-1">
+                <div class="row">
+                  <div
+                    class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
+                  >
+                    <h3 data-i18n="solutions.omniMenu.title">
+                      OmniMenu - Digital Restaurant Solutions
+                    </h3>
+                    <p
+                      class="fst-italic"
+                      data-i18n="solutions.omniMenu.description"
+                    >
+                      Transform your dining experience with OmniMenu's QR code
+                      menus and digital ordering systems.
+                    </p>
+                    <ul>
+                      <li>
+                        <i class="bi bi-check2-all"></i>
+                        <span data-i18n="solutions.omniMenu.features.feature1"
+                          >Digital Ordering & QR Menus - No app installation
+                          needed</span
+                        >
+                      </li>
+                      <li>
+                        <i class="bi bi-check2-all"></i>
+                        <span data-i18n="solutions.omniMenu.features.feature2"
+                          >Real-Time Menu Management & Updates</span
+                        >
+                      </li>
+                      <li>
+                        <i class="bi bi-check2-all"></i>
+                        <span data-i18n="solutions.omniMenu.features.feature3"
+                          >Reduced Costs & Improved Service Efficiency</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-6 order-1 order-lg-2 text-center">
+                    <img
+                      src="assets/img/demo1.png"
+                      alt="OmniMenu Digital Restaurant Solution"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- THE COMPANION Tab -->
+              <div class="tab-pane fade" id="features-tab-2">
+                <div class="row">
+                  <div
+                    class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
+                  >
+                    <h3 data-i18n="solutions.companion.title">
+                      TheCompanion - Smart Hotel Management
+                    </h3>
+                    <p
+                      class="fst-italic"
+                      data-i18n="solutions.companion.description"
+                    >
+                      Digitalize guest services and streamline hotel operations
+                      with THE COMPANION's smartphone connectivity.
+                    </p>
+                    <ul>
+                      <li>
+                        <i class="bi bi-check2-all"></i>
+                        <span data-i18n="solutions.companion.features.feature1"
+                          >Mobile Access to All Hotel Services</span
+                        >
+                      </li>
+                      <li>
+                        <i class="bi bi-check2-all"></i>
+                        <span data-i18n="solutions.companion.features.feature2"
+                          >AI-Powered Guest Experience</span
+                        >
+                      </li>
+                      <li>
+                        <i class="bi bi-check2-all"></i>
+                        <span data-i18n="solutions.companion.features.feature3"
+                          >Real-Time Operations Management</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-6 order-1 order-lg-2 text-center">
+                    <img
+                      src="assets/img/demo2.png"
+                      alt="THE COMPANION Hotel Management Solution"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- DIGIMALL Tab -->
+              <div class="tab-pane fade" id="features-tab-3">
+                <div class="row">
+                  <div
+                    class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
+                  >
+                    <h3 data-i18n="solutions.digiMall.title">
+                      DIGIMALL - Digital Mall Experience
+                    </h3>
+                    <p
+                      class="fst-italic"
+                      data-i18n="solutions.digiMall.description"
+                    >
+                      Connect visitors to your mall's services through
+                      DIGIMALL's simple QR code scan.
+                    </p>
+                    <ul>
+                      <li>
+                        <i class="bi bi-check2-all"></i>
+                        <span data-i18n="solutions.digiMall.features.feature1"
+                          >Unified Platform for Shops, Restaurants &
+                          Events</span
+                        >
+                      </li>
+                      <li>
+                        <i class="bi bi-check2-all"></i>
+                        <span data-i18n="solutions.digiMall.features.feature2"
+                          >Digital Promotions & Personalized Offers</span
+                        >
+                      </li>
+                      <li>
+                        <i class="bi bi-check2-all"></i>
+                        <span data-i18n="solutions.digiMall.features.feature3"
+                          >Customizable Features for Your Mall</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-6 order-1 order-lg-2 text-center">
+                    <img
+                      src="assets/img/demo3.png"
+                      alt="DIGIMALL Shopping Center Solution"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Features Cards Section -->
+        <section id="features-cards" class="features-cards section">
+          <div class="container">
+            <div class="row gy-4">
+              <div
+                class="col-xl-3 col-md-6"
+                data-aos="zoom-in"
+                data-aos-delay="100"
+              >
+                <div class="feature-box orange">
+                  <i class="bi bi-gear-wide-connected"></i>
+                  <h4 data-i18n="features.card1.title">
+                    Tailored SaaS Solutions
+                  </h4>
+                  <p data-i18n="features.card1.description">
+                    We develop customized platforms that meet the specific needs
+                    of restaurants, hotels, and malls, simplifying daily
+                    operations and boosting efficiency.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="col-xl-3 col-md-6"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+              >
+                <div class="feature-box blue">
+                  <i class="bi bi-robot"></i>
+                  <h4 data-i18n="features.card2.title">
+                    Digitalization & Automation
+                  </h4>
+                  <p data-i18n="features.card2.description">
+                    Our technology transforms business processes by automating
+                    tasks, reducing manual work, and enhancing productivity.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="col-xl-3 col-md-6"
+                data-aos="zoom-in"
+                data-aos-delay="300"
+              >
+                <div class="feature-box green">
+                  <i class="bi bi-graph-up"></i>
+                  <h4 data-i18n="features.card3.title">Data-Driven Insights</h4>
+                  <p data-i18n="features.card3.description">
+                    We integrate powerful analytics tools that help businesses
+                    understand their customers, track performance, and refine
+                    their strategies.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="col-xl-3 col-md-6"
+                data-aos="zoom-in"
+                data-aos-delay="400"
+              >
+                <div class="feature-box red">
+                  <i class="bi bi-boxes"></i>
+                  <h4 data-i18n="features.card4.title">
+                    Scalability & Integration
+                  </h4>
+                  <p data-i18n="features.card4.description">
+                    Our solutions grow with your business, integrating
+                    effortlessly with existing systems to support expansion and
+                    evolving needs
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services section light-background">
+          <div class="container section-title" data-aos="fade-up">
+            <h2 data-i18n="services.title">Our Services</h2>
+            <p data-i18n="services.description">
+              Comprehensive digital solutions to transform your business
+              operations and enhance customer experience
+            </p>
+          </div>
+
+          <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="row g-4">
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card d-flex">
+                  <div class="icon flex-shrink-0">
+                    <i class="bi bi-gear-wide-connected"></i>
+                  </div>
+                  <div>
+                    <h3 data-i18n="services.service1.title">
+                      Custom SaaS Development
+                    </h3>
+                    <p data-i18n="services.service1.description">
+                      We develop tailored SaaS platforms that meet the specific
+                      needs of your business. Our solutions are designed to
+                      streamline operations, enhance efficiency, and improve
+                      customer satisfaction.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card d-flex">
+                  <div class="icon flex-shrink-0">
+                    <i class="bi bi-phone"></i>
+                  </div>
+                  <div>
+                    <h3 data-i18n="services.service2.title">
+                      Progressive Web Apps
+                    </h3>
+                    <p data-i18n="services.service2.description">
+                      Our PWA solutions offer app-like experiences without
+                      installation requirements. Access your services through
+                      simple QR codes, ensuring maximum accessibility and
+                      convenience.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-card d-flex">
+                  <div class="icon flex-shrink-0">
+                    <i class="bi bi-graph-up"></i>
+                  </div>
+                  <div>
+                    <h3 data-i18n="services.service3.title">
+                      Data Analytics & Insights
+                    </h3>
+                    <p data-i18n="services.service3.description">
+                      Transform your business data into actionable insights. Our
+                      platforms include advanced analytics tools that help you
+                      understand customer behavior and track performance.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="service-card d-flex">
+                  <div class="icon flex-shrink-0">
+                    <i class="bi bi-headset"></i>
+                  </div>
+                  <div>
+                    <h3 data-i18n="services.service4.title">
+                      24/7 Technical Support
+                    </h3>
+                    <p data-i18n="services.service4.description">
+                      Our dedicated support team ensures smooth operations and
+                      continuous improvement of your digital solutions. We
+                      provide comprehensive assistance from implementation to
+                      maintenance.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section light-background">
+          <div class="container section-title" data-aos="fade-up">
+            <h2 data-i18n="contact.title">Contact Us</h2>
+            <p data-i18n="contact.description">
+              Ready to transform your business? Get in touch with our team to
+              discuss how our digital solutions can work for you
+            </p>
+          </div>
+
+          <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="row g-4 g-lg-5">
+              <div class="col-lg-5">
+                <div class="info-box" data-aos="fade-up" data-aos-delay="200">
+                  <h3 data-i18n="contact.info.title">Contact Info</h3>
+                  <p data-i18n="contact.info.description">
+                    Whether you're looking to digitalize your restaurant, hotel,
+                    or shopping center, our team is here to help you get
+                    started.
+                  </p>
+
+                  <div
+                    class="info-item"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                  >
+                    <div class="icon-box">
+                      <i class="bi bi-geo-alt"></i>
+                    </div>
+                    <div class="content">
+                      <h4 data-i18n="contact.info.office.title">Head Office</h4>
+                      <p data-i18n="contact.info.office.address1">
+                        BOIS DES CARS 01 N° 63
+                      </p>
+                      <p data-i18n="contact.info.office.address2">
+                        Dely Brahim, ALGER, ALGERIA
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="info-item"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                  >
+                    <div class="icon-box">
+                      <i class="bi bi-telephone"></i>
+                    </div>
+                    <div class="content">
+                      <h4 data-i18n="contact.info.sales.title">
+                        Sales Inquiries
+                      </h4>
+                      <p data-i18n="contact.info.sales.phone">
+                        +213 (05) 60 02 00 96
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="info-item"
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                  >
+                    <div class="icon-box">
+                      <i class="bi bi-envelope"></i>
+                    </div>
+                    <div class="content">
+                      <h4 data-i18n="contact.info.email.title">Email Us</h4>
+                      <p data-i18n="contact.info.email.support">
+                        Support: contact@digiways.io
+                      </p>
+                      <p data-i18n="contact.info.email.sales">
+                        Sales: sales@digiways.io
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-7">
+                <div
+                  class="contact-form"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <h3 data-i18n="contact.form.title">Get In Touch</h3>
+                  <p data-i18n="contact.form.description">
+                    Interested in our solutions? Fill out the form below and our
+                    team will get back to you shortly.
+                  </p>
+
+                  <form
+                    action="forms/contact.php"
+                    method="post"
+                    class="php-email-form"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    <div class="row gy-4">
+                      <div class="col-md-6">
+                        <input
+                          type="text"
+                          name="name"
+                          class="form-control"
+                          data-i18n="[placeholder]contact.form.fields.name"
+                          required
+                        />
+                      </div>
+
+                      <div class="col-md-6">
+                        <input
+                          type="email"
+                          class="form-control"
+                          name="email"
+                          data-i18n="[placeholder]contact.form.fields.email"
+                          required
+                        />
+                      </div>
+
+                      <div class="col-md-6">
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="company"
+                          data-i18n="[placeholder]contact.form.fields.company"
+                          required
+                        />
+                      </div>
+
+                      <div class="col-md-6">
+                        <input
+                          type="tel"
+                          class="form-control"
+                          name="phone"
+                          data-i18n="[placeholder]contact.form.fields.phone"
+                          required
+                        />
+                      </div>
+
+                      <div class="col-12">
+                        <textarea
+                          class="form-control"
+                          name="message"
+                          rows="6"
+                          data-i18n="[placeholder]contact.form.fields.message"
+                          required
+                        ></textarea>
+                      </div>
+
+                      <div class="col-12 text-center">
+                        <div
+                          class="loading"
+                          data-i18n="contact.form.messages.loading"
+                        >
+                          Loading
+                        </div>
+                        <div class="error-message"></div>
+                        <div
+                          class="sent-message"
+                          data-i18n="contact.form.messages.success"
+                        >
+                          Your message has been sent. Thank you!
+                        </div>
+
+                        <button
+                          type="submit"
+                          class="btn"
+                          data-i18n="contact.form.button"
+                        >
+                          Send Message
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer id="footer" class="footer">
+        <div class="container footer-top">
+          <div class="row gy-4">
+            <div class="col-lg-4 col-md-6 footer-about">
+              <a href="index.html" class="logo d-flex align-items-center">
+                <span class="sitename">DigiWays</span>
+              </a>
+              <div class="footer-contact pt-3">
+                <p data-i18n="footer.address.line1">BOIS DES CARS 01 N° 63</p>
+                <p data-i18n="footer.address.line2">
+                  Dely Brahim, ALGER, ALGERIA
+                </p>
+                <p class="mt-3">
+                  <strong data-i18n="footer.contact.sales">Sales:</strong>
+                  <span data-i18n="footer.contact.phone"
+                    >+213 (05) 60 02 00 96</span
+                  >
+                </p>
+                <p>
+                  <strong data-i18n="footer.contact.email">Email:</strong>
+                  <span>contact@digiways.io</span>
+                </p>
+              </div>
+              <div class="social-links d-flex mt-4">
+                <a
+                  href="https://www.linkedin.com/company/digiways-io"
+                  aria-label="LinkedIn"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+                <a
+                  href="https://www.facebook.com/digiways.io"
+                  aria-label="Facebook"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/digiways_io"
+                  aria-label="Instagram"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-3 footer-links">
+              <h4 data-i18n="footer.navigation.title">Navigation</h4>
+              <ul>
+                <li><a href="#hero" data-i18n="nav.home">Home</a></li>
+                <li><a href="#about" data-i18n="nav.about">About</a></li>
+                <li>
+                  <a href="#features" data-i18n="nav.solutions">Solutions</a>
+                </li>
+                <li>
+                  <a href="#services" data-i18n="nav.services">Services</a>
+                </li>
+                <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-3 footer-links">
+              <h4 data-i18n="footer.solutions.title">Our Solutions</h4>
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.omnimenu.io"
+                    data-i18n="footer.solutions.omnimenu"
+                  >
+                    OMNIMENU - Restaurant Solution
+                  </a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.thecompanion.pro"
+                    data-i18n="footer.solutions.companion"
+                  >
+                    THECOMPANION - Hotel Solution
+                  </a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="#"
+                    data-i18n="footer.solutions.digimall"
+                  >
+                    DIGIMALL - Mall Solution
+                  </a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.restosdz.com"
+                    data-i18n="footer.solutions.restosdz"
+                  >
+                    RESTOSDZ Platform
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-3 footer-links">
+              <h4 data-i18n="footer.services.title">Our Services</h4>
+              <ul>
+                <li>
+                  <a href="#" data-i18n="footer.services.saas"
+                    >Custom SaaS Development</a
+                  >
+                </li>
+                <li>
+                  <a href="#" data-i18n="footer.services.pwa"
+                    >Progressive Web Apps</a
+                  >
+                </li>
+                <li>
+                  <a href="#" data-i18n="footer.services.analytics"
+                    >Data Analytics & Insights</a
+                  >
+                </li>
+                <li>
+                  <a href="#" data-i18n="footer.services.support"
+                    >24/7 Technical Support</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="container copyright text-center mt-4">
+          <p>
+            <span data-i18n="footer.copyright.prefix">©</span>
+            <span data-i18n="footer.copyright.company">DigiWays</span>
+            <strong class="px-1" data-i18n="footer.copyright.rights"
+              >All Rights Reserved</strong
+            >
+          </p>
+        </div>
+      </footer>
+
+      <!-- Scroll Top Button -->
+      <a
+        href="#"
+        id="scroll-top"
+        class="scroll-top d-flex align-items-center justify-content-center"
+      >
+        <i class="bi bi-arrow-up-short"></i>
+      </a>
+
+      <!-- Vendor JS Files -->
+      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/vendor/php-email-form/validate.js"></script>
+      <script src="assets/vendor/aos/aos.js"></script>
+      <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+      <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+      <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+      <!-- Template Main JS File -->
+      <script src="assets/js/main.js"></script>
+
+      <!-- Initialize language on page load -->
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          // Check for saved language preference
+          const savedLang = localStorage.getItem("preferred-language");
+          if (savedLang) {
+            changeLanguage(savedLang);
+          } else {
+            // Check browser language
+            const browserLang = navigator.language.split("-")[0];
+            if (["en", "fr", "ar"].includes(browserLang)) {
+              changeLanguage(browserLang);
+            } else {
+              changeLanguage("en"); // Default to English
+            }
+          }
+
+          // Update active state of language buttons
+          updateLanguageButtons();
+        });
+
+        // Function to update language button states
+        function updateLanguageButtons() {
+          const currentLang = i18next.language;
+          document.querySelectorAll(".lang-btn").forEach((btn) => {
+            const lang = btn.getAttribute("onclick").match(/'(\w+)'/)[1];
+            btn.classList.toggle("active", lang === currentLang);
+          });
         }
-      };
-    </script>
-  </head>
-  <body></body>
+
+        // Initialize glightbox after i18next is ready
+        i18next.on("languageChanged", () => {
+          // Reinitialize any plugins that need text updates
+          const lightbox = GLightbox({
+            selector: ".glightbox",
+          });
+        });
+      </script>
+    </body>
+  </html>
 </html>

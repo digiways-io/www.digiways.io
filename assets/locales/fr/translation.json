@@ -1,0 +1,213 @@
+{
+    "page": {
+        "title": "DigiWays - Solutions numériques pour les entreprises",
+        "description": "DigiWays se spécialise dans la fourniture de solutions SaaS innovantes conçues pour numériser et optimiser les opérations dans les secteurs commerciaux, hôteliers et gastronomiques.",
+        "keywords": "solutions numériques, SaaS, logiciels hôteliers, gestion de restaurants, gestion de centres commerciaux"
+    },
+    "nav": {
+        "home": "Accueil",
+        "about": "À propos",
+        "solutions": "Solutions",
+        "services": "Services",
+        "contact": "Contact",
+        "getStarted": "Commencer"
+    },
+    "hero": {
+        "badge": "Travailler pour votre succès",
+        "title": "Façonner l'Avenir",
+        "subtitle": "avec DigiWays",
+        "description": "Chez DigiWays, nous nous spécialisons dans la fourniture de solutions SaaS innovantes conçues pour numériser et optimiser les opérations dans les secteurs commerciaux, hôteliers et gastronomiques. Notre technologie de pointe permet aux entreprises de prospérer dans un monde numériquement connecté.",
+        "cta": {
+            "contact": "Contact",
+            "playVideo": "Lire la vidéo"
+        },
+        "customers": {
+            "text": "Plus de 12 000 clients satisfaits dans le monde entier"
+        }
+    },
+    "stats": {
+        "stat1": {
+            "title": "Leader du marché",
+            "description": "En solutions numériques"
+        },
+        "stat2": {
+            "title": "4 plateformes",
+            "description": "Produits phares"
+        },
+        "stat3": {
+            "title": "Croissance rapide",
+            "description": "Année après année"
+        },
+        "stat4": {
+            "title": "Tout-en-un",
+            "description": "Solutions d'affaires"
+        }
+    },
+    "about": {
+        "meta": "EN SAVOIR PLUS SUR NOUS",
+        "title": "Transformer les entreprises grâce à l'innovation numérique",
+        "description": "Chez DigiWays, nous sommes dédiés à révolutionner les secteurs de l'hôtellerie et du commerce grâce à des solutions SaaS innovantes. Notre technologie permet aux entreprises d'adopter la transformation numérique et d'atteindre l'excellence opérationnelle.",
+        "features": {
+            "feature1": "Plates-formes SaaS personnalisées",
+            "feature2": "Support technique 24/7",
+            "feature3": "Outils d'analyse avancés",
+            "feature4": "Intégration transparente",
+            "feature5": "Solutions évolutives",
+            "feature6": "Analyses basées sur les données"
+        },
+        "company": {
+            "name": "DIGI WAYS INNOVATION",
+            "position": "Siège social",
+            "location": {
+                "label": "Trouvez-nous à",
+                "address": "BOIS DES CARS 01 N° 63, Dely Brahim, ALGER"
+            }
+        }
+    },
+    "solutions": {
+        "title": "Solutions",
+        "description": "Transformer les entreprises grâce à des solutions numériques innovantes adaptées aux restaurants, hôtels et centres commerciaux",
+        "tabs": {
+            "restaurants": "Restaurants",
+            "hotels": "Hôtels",
+            "mall": "Centre commercial"
+        },
+        "omniMenu": {
+            "title": "OmniMenu - Solutions numériques pour restaurants",
+            "description": "Transformez votre expérience culinaire avec les menus QR code et les systèmes de commande numérique d'OmniMenu.",
+            "features": {
+                "feature1": "Commandes numériques & Menus QR - Aucune installation d'application requise",
+                "feature2": "Gestion en temps réel des menus et des mises à jour",
+                "feature3": "Réduction des coûts et amélioration de l'efficacité du service"
+            }
+        },
+        "companion": {
+            "title": "TheCompanion - Gestion intelligente des hôtels",
+            "description": "Numérisez les services aux clients et rationalisez les opérations hôtelières avec la connectivité smartphone de THE COMPANION.",
+            "features": {
+                "feature1": "Accès mobile à tous les services de l'hôtel",
+                "feature2": "Expérience client alimentée par l'IA",
+                "feature3": "Gestion des opérations en temps réel"
+            }
+        },
+        "digiMall": {
+            "title": "DIGIMALL - Expérience numérique de centre commercial",
+            "description": "Connectez les visiteurs aux services de votre centre commercial via un simple scan de QR code de DIGIMALL.",
+            "features": {
+                "feature1": "Plateforme unifiée pour magasins, restaurants et événements",
+                "feature2": "Promotions numériques et offres personnalisées",
+                "feature3": "Fonctionnalités personnalisables pour votre centre commercial"
+            }
+        }
+    },
+    "features": {
+        "card1": {
+            "title": "Solutions SaaS Sur Mesure",
+            "description": "Nous développons des plateformes personnalisées répondant aux besoins spécifiques des restaurants, hôtels et centres commerciaux, simplifiant les opérations quotidiennes et augmentant l'efficacité."
+        },
+        "card2": {
+            "title": "Numérisation & Automatisation",
+            "description": "Notre technologie transforme les processus d'entreprise en automatisant les tâches, réduisant le travail manuel et améliorant la productivité."
+        },
+        "card3": {
+            "title": "Analyses Basées sur les Données",
+            "description": "Nous intégrons des outils d'analyse puissants qui aident les entreprises à comprendre leurs clients, suivre les performances et affiner leurs stratégies."
+        },
+        "card4": {
+            "title": "Évolutivité & Intégration",
+            "description": "Nos solutions évoluent avec votre entreprise, s'intégrant sans effort aux systèmes existants pour soutenir l'expansion et les besoins changeants."
+        }
+    },
+    "services": {
+        "title": "Nos Services",
+        "description": "Des solutions numériques complètes pour transformer vos opérations commerciales et améliorer l'expérience client",
+        "service1": {
+            "title": "Développement SaaS Personnalisé",
+            "description": "Nous développons des plateformes SaaS adaptées aux besoins spécifiques de votre entreprise. Nos solutions sont conçues pour rationaliser les opérations, améliorer l'efficacité et la satisfaction client."
+        },
+        "service2": {
+            "title": "Applications Web Progressives",
+            "description": "Nos solutions PWA offrent des expériences similaires aux applications sans installation. Accédez à vos services via des codes QR simples, garantissant une accessibilité et une commodité maximales."
+        },
+        "service3": {
+            "title": "Analyse de Données & Insights",
+            "description": "Transformez vos données commerciales en insights exploitables. Nos plateformes incluent des outils d'analyse avancés pour comprendre le comportement des clients et suivre les performances."
+        },
+        "service4": {
+            "title": "Support Technique 24/7",
+            "description": "Notre équipe de support dédiée assure le bon fonctionnement et l'amélioration continue de vos solutions numériques. Nous fournissons une assistance complète de l'implémentation à la maintenance."
+        }
+    },
+    "contact": {
+        "title": "Contactez-nous",
+        "description": "Prêt à transformer votre entreprise ? Contactez notre équipe pour discuter de la façon dont nos solutions numériques peuvent vous aider.",
+        "info": {
+            "title": "Informations de contact",
+            "description": "Que vous souhaitiez numériser votre restaurant, hôtel ou centre commercial, notre équipe est là pour vous aider à démarrer.",
+            "office": {
+                "title": "Siège social",
+                "address1": "BOIS DES CARS 01 N° 63",
+                "address2": "Dely Brahim, ALGER, ALGÉRIE"
+            },
+            "sales": {
+                "title": "Demandes commerciales",
+                "phone": "+213 (05) 60 02 00 96"
+            },
+            "email": {
+                "title": "Envoyez-nous un e-mail",
+                "support": "Support : contact@digiways.io",
+                "sales": "Commercial : sales@digiways.io"
+            }
+        },
+        "form": {
+            "title": "Prenez contact",
+            "description": "Intéressé par nos solutions ? Remplissez le formulaire ci-dessous et notre équipe reviendra vers vous sous peu pour discuter de la manière dont nous pouvons vous aider à transformer votre entreprise.",
+            "fields": {
+                "name": "Votre nom",
+                "email": "Votre e-mail",
+                "company": "Nom de l'entreprise",
+                "phone": "Numéro de téléphone",
+                "message": "Parlez-nous de votre projet"
+            },
+            "button": "Envoyer le message",
+            "messages": {
+                "loading": "Chargement",
+                "success": "Votre message a été envoyé. Merci !",
+                "error": "Une erreur est survenue lors de l'envoi de votre message"
+            }
+        }
+    },
+    "footer": {
+        "address": {
+            "line1": "BOIS DES CARS 01 N° 63",
+            "line2": "Dely Brahim, ALGER, ALGÉRIE"
+        },
+        "contact": {
+            "sales": "Commercial",
+            "phone": "+213 (05) 60 02 00 96",
+            "email": "E-mail"
+        },
+        "navigation": {
+            "title": "Navigation"
+        },
+        "solutions": {
+            "title": "Nos Solutions",
+            "omnimenu": "OMNIMENU - Solution Restaurant",
+            "companion": "THECOMPANION - Solution Hôtelière",
+            "digimall": "DIGIMALL - Solution Centre Commercial",
+            "restosdz": "Plateforme RESTOSDZ"
+        },
+        "services": {
+            "title": "Nos Services",
+            "saas": "Développement SaaS Personnalisé",
+            "pwa": "Applications Web Progressives",
+            "analytics": "Analyses de Données & Insights",
+            "support": "Support Technique 24/7"
+        },
+        "copyright": {
+            "prefix": "©",
+            "company": "DigiWays",
+            "rights": "Tous Droits Réservés"
+        }
+    }
+}

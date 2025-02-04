@@ -1,0 +1,213 @@
+{
+    "page": {
+        "title": "DigiWays - Digital Solutions for Business",
+        "description": "DigiWays specializes in delivering innovative SaaS solutions designed to digitize and optimize operations in commercial, hospitality, and gastronomic industries.",
+        "keywords": "digital solutions, SaaS, hospitality software, restaurant management, mall management"
+    },
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "solutions": "Solutions",
+        "services": "Services",
+        "contact": "Contact",
+        "getStarted": "Get Started"
+    },
+    "hero": {
+        "badge": "Working for your success",
+        "title": "Shape the Future",
+        "subtitle": "with DigiWays",
+        "description": "At DigiWays, we specialize in delivering innovative SaaS solutions designed to digitize and optimize operations in the commercial, hospitality, and gastronomic industries. Our cutting-edge technology empowers businesses to thrive in a digitally connected world.",
+        "cta": {
+            "contact": "Contact",
+            "playVideo": "Play Video"
+        },
+        "customers": {
+            "text": "12,000+ satisfied customers worldwide"
+        }
+    },
+    "stats": {
+        "stat1": {
+            "title": "Market Leader",
+            "description": "In Digital Solutions"
+        },
+        "stat2": {
+            "title": "4 Platforms",
+            "description": "Flagship Products"
+        },
+        "stat3": {
+            "title": "Growing Fast",
+            "description": "Year Over Year"
+        },
+        "stat4": {
+            "title": "All-in-One",
+            "description": "Business Solutions"
+        }
+    },
+    "about": {
+        "meta": "MORE ABOUT US",
+        "title": "Transforming Business Through Digital Innovation",
+        "description": "At DigiWays, we're dedicated to revolutionizing the hospitality and commercial sectors through innovative SaaS solutions. Our technology empowers businesses to embrace digital transformation and achieve operational excellence.",
+        "features": {
+            "feature1": "Customized SaaS Platforms",
+            "feature2": "24/7 Technical Support",
+            "feature3": "Advanced Analytics Tools",
+            "feature4": "Seamless Integration",
+            "feature5": "Scalable Solutions",
+            "feature6": "Data-Driven Insights"
+        },
+        "company": {
+            "name": "DIGI WAYS INNOVATION",
+            "position": "Head Office",
+            "location": {
+                "label": "Find us at",
+                "address": "BOIS DES CARS 01 N° 63, Dely Brahim, ALGER"
+            }
+        }
+    },
+    "solutions": {
+        "title": "Solutions",
+        "description": "Transforming businesses through innovative digital solutions tailored for restaurants, hotels, and shopping centers",
+        "tabs": {
+            "restaurants": "Restaurants",
+            "hotels": "Hotels",
+            "mall": "Mall"
+        },
+        "omniMenu": {
+            "title": "OmniMenu - Digital Restaurant Solutions",
+            "description": "Transform your dining experience with OmniMenu's QR code menus and digital ordering systems.",
+            "features": {
+                "feature1": "Digital Ordering & QR Menus - No app installation needed",
+                "feature2": "Real-Time Menu Management & Updates",
+                "feature3": "Reduced Costs & Improved Service Efficiency"
+            }
+        },
+        "companion": {
+            "title": "TheCompanion - Smart Hotel Management",
+            "description": "Digitalize guest services and streamline hotel operations with THE COMPANION's smartphone connectivity.",
+            "features": {
+                "feature1": "Mobile Access to All Hotel Services",
+                "feature2": "AI-Powered Guest Experience",
+                "feature3": "Real-Time Operations Management"
+            }
+        },
+        "digiMall": {
+            "title": "DIGIMALL - Digital Mall Experience",
+            "description": "Connect visitors to your mall's services through DIGIMALL's simple QR code scan.",
+            "features": {
+                "feature1": "Unified Platform for Shops, Restaurants & Events",
+                "feature2": "Digital Promotions & Personalized Offers",
+                "feature3": "Customizable Features for Your Mall"
+            }
+        }
+    },
+    "features": {
+        "card1": {
+            "title": "Tailored SaaS Solutions",
+            "description": "We develop customized platforms that meet the specific needs of restaurants, hotels, and malls, simplifying daily operations and boosting efficiency."
+        },
+        "card2": {
+            "title": "Digitalization & Automation",
+            "description": "Our technology transforms business processes by automating tasks, reducing manual work, and enhancing productivity."
+        },
+        "card3": {
+            "title": "Data-Driven Insights",
+            "description": "We integrate powerful analytics tools that help businesses understand their customers, track performance, and refine their strategies."
+        },
+        "card4": {
+            "title": "Scalability & Integration",
+            "description": "Our solutions grow with your business, integrating effortlessly with existing systems to support expansion and evolving needs."
+        }
+    },
+    "services": {
+        "title": "Our Services",
+        "description": "Comprehensive digital solutions to transform your business operations and enhance customer experience",
+        "service1": {
+            "title": "Custom SaaS Development",
+            "description": "We develop tailored SaaS platforms that meet the specific needs of your business. Our solutions are designed to streamline operations, enhance efficiency, and improve customer satisfaction."
+        },
+        "service2": {
+            "title": "Progressive Web Apps",
+            "description": "Our PWA solutions offer app-like experiences without installation requirements. Access your services through simple QR codes, ensuring maximum accessibility and convenience."
+        },
+        "service3": {
+            "title": "Data Analytics & Insights",
+            "description": "Transform your business data into actionable insights. Our platforms include advanced analytics tools that help you understand customer behavior and track performance."
+        },
+        "service4": {
+            "title": "24/7 Technical Support",
+            "description": "Our dedicated support team ensures smooth operations and continuous improvement of your digital solutions. We provide comprehensive assistance from implementation to maintenance."
+        }
+    },
+    "contact": {
+        "title": "Contact Us",
+        "description": "Ready to transform your business? Get in touch with our team to discuss how our digital solutions can work for you",
+        "info": {
+            "title": "Contact Info",
+            "description": "Whether you're looking to digitalize your restaurant, hotel, or shopping center, our team is here to help you get started.",
+            "office": {
+                "title": "Head Office",
+                "address1": "BOIS DES CARS 01 N° 63",
+                "address2": "Dely Brahim, ALGER, ALGERIA"
+            },
+            "sales": {
+                "title": "Sales Inquiries",
+                "phone": "+213 (05) 60 02 00 96"
+            },
+            "email": {
+                "title": "Email Us",
+                "support": "Support: contact@digiways.io",
+                "sales": "Sales: sales@digiways.io"
+            }
+        },
+        "form": {
+            "title": "Get In Touch",
+            "description": "Interested in our solutions? Fill out the form below and our team will get back to you shortly to discuss how we can help transform your business.",
+            "fields": {
+                "name": "Your Name",
+                "email": "Your Email",
+                "company": "Company Name",
+                "phone": "Phone Number",
+                "message": "Tell us about your project"
+            },
+            "button": "Send Message",
+            "messages": {
+                "loading": "Loading",
+                "success": "Your message has been sent. Thank you!",
+                "error": "There was an error sending your message"
+            }
+        }
+    },
+    "footer": {
+        "address": {
+            "line1": "BOIS DES CARS 01 N° 63",
+            "line2": "Dely Brahim, ALGER, ALGERIA"
+        },
+        "contact": {
+            "sales": "Sales",
+            "phone": "+213 (05) 60 02 00 96",
+            "email": "Email"
+        },
+        "navigation": {
+            "title": "Navigation"
+        },
+        "solutions": {
+            "title": "Our Solutions",
+            "omnimenu": "OMNIMENU - Restaurant Solution",
+            "companion": "THECOMPANION - Hotel Solution",
+            "digimall": "DIGIMALL - Mall Solution",
+            "restosdz": "RESTOSDZ Platform"
+        },
+        "services": {
+            "title": "Our Services",
+            "saas": "Custom SaaS Development",
+            "pwa": "Progressive Web Apps",
+            "analytics": "Data Analytics & Insights",
+            "support": "24/7 Technical Support"
+        },
+        "copyright": {
+            "prefix": "©",
+            "company": "DigiWays",
+            "rights": "All Rights Reserved"
+        }
+    }
+}
